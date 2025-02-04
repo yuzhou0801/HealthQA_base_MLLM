@@ -2,7 +2,7 @@
 >This project is a senior course project of Ocean University of China and Heriot-Watt University. It aims to optimize the multimodal large language model in health and support tri-modal input of text, image and voice.
 
 ## directory
-- [Project Introduction](#Introduction)
+- [Introduction](#Introduction)
 - [Dataset preparation](#Dataset-preparation)
 - [MLLM model preparation](#MLLM-model-preparation)
 - [Experimental Results](#Experimental-Results)
@@ -15,14 +15,14 @@ The core goals of this project are:
 - 🚀 **Optimize based on LLaVA-Med**: Train and deploy through **AutoDL vGPU-32GB**.
 - 🔍 **Dataset**: Contains **text Q&A, image Q&A, and textbooks**, used to build the **RAG database**.
 
-## 📂 Dataset preparation
+## 📂 Dataset-preparation
 ### 📥 Data preprocessing
 We use Python to unify the data format for subsequent processing. The following are different databases and the formats they contain.
 - **NHS dataset** 📜: Contains **Disease, Symptoms and Treatments** ([NHS website](https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/))
 - **Text question&answer and textbooks** 📜: Contains **type, question and answer** or **type and text** ([MedQA](https://github.com/jind11/MedQA))
 - **Image question&answer** 📜: Contains **type, image, question and answer** ([VQA-Med-2019](https://github.com/abachaa/VQA-Med-2019))
 
-## 🏗 MLLM model preparation
+## 🏗 MLLM-model-preparation
 ### 🌟 Custom knowledge base
 Since we need to optimize health-related questions and answers, we choose to use RAG.
 - For plain text embedding we choose to use all-MiniLM-L6-v2.([all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2))
@@ -39,7 +39,7 @@ In order to achieve the tri-modal task goal, we investigated some multi-modal la
   [Tri-modal_Before_optimization](directory/final_model/Tri-modal_Before_optimization.ipynb)
   [Trimodal_Optimized](directory/final_model/Trimodal_Optimized.ipynb)
 
-## 📊 Experimental Results
+## 📊 Experimental-Results
 We have completed the construction of the model and will evaluate it later. Currently, we only provide a few screenshots of the running results.
 Taking the description of Acute lymphoblastic leukaemia on the NHS official website([Acute lymphoblastic leukaemia](https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/acute-lymphoblastic-leukaemia/)) as an example, the results are as follows:
 ![Before joining the self-built database](picture/before.png)
