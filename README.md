@@ -1,14 +1,6 @@
 # HealthQA_base_MLLM
 >This project is a senior course project of Ocean University of China and Heriot-Watt University. It aims to optimize the multimodal large language model in health and support tri-modal input of text, image and voice.
 
-## directory
-- [Introduction](#Introduction)
-- [Dataset preparation](#Dataset-preparation)
-- [MLLM model preparation](#MLLM-model-preparation)
-- [Experimental Results](#Experimental-Results)
-
----
-
 ## 🔥 Introduction
 The core goals of this project are:
 - 🌟 **Support multimodal input**: Combine **text, image, and voice** to improve medical Q&A results.
