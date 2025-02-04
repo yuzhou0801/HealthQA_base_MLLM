@@ -11,10 +11,15 @@
 ---
 
 ## 🔥 Introduction
-
+The core goals of this project are:
+- 🌟 **Support multimodal input**: Combine **text, image, and voice** to improve medical Q&A results.
+- 🚀 **Optimize based on LLaVA-Med**: Train and deploy through **AutoDL 4090 GPU**.
+- 🔍 **Dataset**: Contains **text Q&A, image Q&A, and textbooks**, used to build the **RAG database**.
 
 ## 📂 Dataset preparation
-
+### 📌 Data Source
+- **NHS dataset** 📜: Contains **Disease, Symptoms and Treatments** [Visit the NHS website]([链接地址](https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/))
+- **Text quiz answers and textbooks** 📜: Contains **type, question and answer** or **type and text**
 
 ## 🏗 MLLM model preparation
 
