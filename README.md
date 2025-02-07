@@ -31,9 +31,15 @@ In order to achieve the tri-modal task goal, we investigated some multi-modal la
   [Tri-modal_Before_optimization](directory/final_model/Tri-modal_Before_optimization.ipynb)
   [Trimodal_Optimized](directory/final_model/Trimodal_Optimized.ipynb)
 
+### 🔊 Speech Recognition Model
+We chose whisper to complete our speech recognition module.([whisper](https://github.com/openai/whisper))
+
 ## 📊 Experimental-Results
-We have completed the construction of the model and will evaluate it later. Currently, we only provide a few screenshots of the running results.
-Taking the description of Acute lymphoblastic leukaemia on the NHS official website([Acute lymphoblastic leukaemia](https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/acute-lymphoblastic-leukaemia/)) as an example, the results are as follows:
-![Before joining the self-built database](picture/before.png)
-![After joining the self-built database](picture/after.png)
-Although we have not yet conducted a specific evaluation, in terms of response time, the response time is shorter by about 7 seconds after adding the self-built database, while it takes about 25 seconds without adding it.
+### 🎯 Accuracy
+We use this metric to evaluate the NHS dataset, input symptoms to see if mllm can correctly return the disease name and countermeasures. We also compare the accuracy before and after adding RAG to determine whether the model has been improved.
+
+### ⏳ Time
+We use this metric to evaluate whether adding RAG can improve the response speed of mllm.
+
+### 🔬 Answer Consistency
+We compare the results of mllm output with the standard answers on the official website to see whether adding RAG will improve the consistency of answers.
