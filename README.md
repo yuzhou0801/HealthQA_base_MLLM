@@ -36,7 +36,10 @@ We chose whisper to complete our speech recognition module.([whisper](https://gi
 
 ## 📊 Experimental
 After starting to run, the interface is as follows:
+![interface](picture/web.png)
 
+The result of voice input as an example:
+![after](picture/after.png)
 
 ## ✅ Evaluation
 ### 🎯 Accuracy
