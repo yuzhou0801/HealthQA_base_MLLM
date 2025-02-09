@@ -103,4 +103,4 @@ This study evaluated the impact of RAG on a multimodal medical model (GLM-4V-9B 
 In the future, we plan to:
 - Optimize the screening of RAG results, reduce the impact of irrelevant or misleading search content, and consider adding more datasets from different sources.
 - Optimize the prompt design to improve the adaptability of the model to medical reasoning tasks.
-- We have also added some questions and answers about CT images in the dataset. Although these evaluations do not cover images, we will also give some examples and consider adding more pathological images for training in the future.
+- We have also added some questions and answers about medical imaging pictures in the dataset. Although these evaluations do not cover images, we will also give some examples and consider adding more pathological images for training in the future.
