@@ -1,6 +1,9 @@
 # HealthQA_base_MLLM
 > This project is a senior course project of Ocean University of China and Heriot-Watt University. It aims to optimize the multimodal large language model in health and support tri-modal input of text, image and voice. In this experiment, we chose GLM-4V-9B, but it can be easily replaced with other models with better performance.
 
+## 👥 Members
+Yu Zhou, Xinyu Zhu, Yixing Zheng
+
 ## 🔥 Introduction
 The core goals of this project are:
 - 🌟 **Support multimodal input**: Combine **text, image, and voice** to improve medical Q&A results.
