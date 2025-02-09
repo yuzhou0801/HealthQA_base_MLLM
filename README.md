@@ -44,6 +44,9 @@ After starting to run, the interface is as follows:
 The result of voice input as an example:
 ![after](picture/after.png)
 
+Examples of using multimodal images:
+![picture_exampl](picture/picture_example.jpeg)
+
 ## ✅ Evaluation
 ### 🎯 Accuracy
 In order to verify the enhancement effect of RAG on clinical medical tasks, we evaluated it on the NHS case task. The results are shown in the following table:
