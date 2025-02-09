@@ -38,8 +38,17 @@ We chose whisper to complete our speech recognition module.([whisper](https://gi
 ### 🎯 Accuracy
 We use this metric to evaluate the NHS dataset, input symptoms to see if mllm can correctly return the disease name and countermeasures. We also compare the accuracy before and after adding RAG to determine whether the model has been improved.
 
-### ⏳ Time
-We use this metric to evaluate whether adding RAG can improve the response speed of mllm.
 
-### 🔬 Answer Consistency
-We compare the results of mllm output with the standard answers on the official website to see whether adding RAG will improve the consistency of answers.
+### 🔬 Output Quality
+To further evaluate the generation quality of the model on the NHS dataset, we analyzed it from two aspects:
+- **Conciseness**: used to measure whether the generated content is more concise.
+- **Medical Term Density (MTD)**: used to measure the medical relevance of the model's answers.
+
+### 🔍 MMLU-Pro (Health) task evaluation
+To verify the performance of the model on a more authoritative medical benchmark, we tested it on the MMLU-Pro (Health) dataset([MMLU-Pro](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro)):
+- **Score**: Compare whether the model gets a higher score before and after adding RAG.
+- **Effective answer**: Compare whether the model can generate more effective answers before and after adding RAG.
+Specific evaluation code reference:
+
+### ⏳ Time
+Since RAG introduces an additional retrieval process, we want to confirm whether it affects the response speed of the model.
