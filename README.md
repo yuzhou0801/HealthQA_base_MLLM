@@ -1,5 +1,5 @@
 # HealthQA_base_MLLM
->This project is a senior course project of Ocean University of China and Heriot-Watt University. It aims to optimize the multimodal large language model in health and support tri-modal input of text, image and voice.
+> This project is a senior course project of Ocean University of China and Heriot-Watt University. It aims to optimize the multimodal large language model in health and support tri-modal input of text, image and voice. In this experiment, we chose GLM-4V-9B, but it can be easily replaced with other models with better performance.
 
 ## 🔥 Introduction
 The core goals of this project are:
@@ -36,19 +36,60 @@ We chose whisper to complete our speech recognition module.([whisper](https://gi
 
 ## 📊 Experimental-Results
 ### 🎯 Accuracy
-We use this metric to evaluate the NHS dataset, input symptoms to see if mllm can correctly return the disease name and countermeasures. We also compare the accuracy before and after adding RAG to determine whether the model has been improved.
+In order to verify the enhancement effect of RAG on clinical medical tasks, we evaluated it on the NHS case task. The results are shown in the following table:
+| Model | Accuracy |
+|----|----|
+| Without RAG | 47.32% |
+| With RAG | 75.12% |
 
+The table above shows the accuracy comparison of the model before and after RAG, which clearly demonstrates the effectiveness of retrieval enhancement in the medical field.
 
 ### 🔬 Output Quality
 To further evaluate the generation quality of the model on the NHS dataset, we analyzed it from two aspects:
 - **Conciseness**: used to measure whether the generated content is more concise.
 - **Medical Term Density (MTD)**: used to measure the medical relevance of the model's answers.
+  
+|  | Without RAG | With RAG | Change |
+|----|----|----|----|
+| Avg. Word Count | 156.55 | 142.24 | -9.14% |
+| Medical Term Density | 0.0521 | 0.0585 | +12.38% |
+
+Experimental results show that RAG makes the model's answers more refined and the model's output more specialized.
 
 ### 🔍 MMLU-Pro (Health) task evaluation
 To verify the performance of the model on a more authoritative medical benchmark, we tested it on the MMLU-Pro (Health) dataset([MMLU-Pro](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro)):
 - **Score**: Compare whether the model gets a higher score before and after adding RAG.
 - **Effective answer**: Compare whether the model can generate more effective answers before and after adding RAG.
+
 Specific evaluation code reference:
+[evaluation_before_rag](directory/evaluation/evaluation_before_rag.ipynb)
+[evaluation_after_rag](directory/evaluation/evaluation_after_rag.ipynb)
+
+| Model | Accuracy |
+|----|----|
+| Without RAG | 31.42% |
+| With RAG | 35.45% |
+
+Although the increase is not as large as that of the NHS dataset, the nature of the MMLU-Pro task requires higher reasoning ability, so the result still shows that RAG has a certain enhancement effect.
+
+|  | Without RAG | With RAG | Change |
+|----|----|----|----|
+| Null Responses | 146 | 47 | -67.8% |
+
+The table above shows that RAG makes the model willing to answer in more cases. However, among the 99 null answers reduced, only 33 are correct at most, and the rest are still wrong, and may even affect the correct answers, indicating that RAG may encourage wrong answers in some cases.
 
 ### ⏳ Time
-Since RAG introduces an additional retrieval process, we want to confirm whether it affects the response speed of the model.
+Although RAG introduces an additional retrieval process, its impact on response time is almost negligible. Experimental data on the NHS dataset show that:
+- Without RAG, the average response time was 6.68 seconds.
+- With RAG, the average response time was 6.66 seconds.
+
+## 📌 Conclusion
+This study evaluated the impact of RAG on a multimodal medical model (GLM-4V-9B as an example). The experimental results show that:
+- RAG significantly improves the accuracy of the model on the NHS dataset (**+27.80%**).
+- The output of the model is more concise (**-9.14%**) and more medically relevant (**+12.38%**) under the action of RAG.
+- MMLU-Pro (Health) test shows that RAG still helps the model generalization ability (**+4.03%**), but further optimization is needed. RAG is effective in reducing null answers (**-67.8%**), but some newly generated answers are still wrong.
+- RAG has **no significant impact on reasoning time**, making it still highly feasible in practice.
+
+In the future, we plan to:
+- Optimize the screening of RAG results, reduce the impact of irrelevant or misleading search content, and consider adding more datasets from different sources.
+- Optimize the prompt design to improve the adaptability of the model to medical reasoning tasks.
