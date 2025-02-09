@@ -34,7 +34,11 @@ In order to achieve the tri-modal task goal, we investigated some multi-modal la
 ### 🔊 Speech Recognition Model
 We chose whisper to complete our speech recognition module.([whisper](https://github.com/openai/whisper))
 
-## 📊 Experimental-Results
+## 📊 Experimental
+After starting to run, the interface is as follows:
+
+
+## ✅ Evaluation
 ### 🎯 Accuracy
 In order to verify the enhancement effect of RAG on clinical medical tasks, we evaluated it on the NHS case task. The results are shown in the following table:
 | Model | Accuracy |
