@@ -7,7 +7,7 @@ Yu Zhou, Xinyu Zhu, Yixing Zheng
 ## 🔥 Introduction
 The core goals of this project are:
 - 🌟 **Support multimodal input**: Combine **text, image, and voice** to improve medical Q&A results.
-- 🚀 **Optimize based on LLaVA-Med**: Train and deploy through **AutoDL vGPU-32GB**.
+- 🚀 **Optimize based on GLM-4V-9B**: Train and deploy through **AutoDL vGPU-32GB**.
 - 🔍 **Dataset**: Contains **text Q&A, image Q&A, and textbooks**, used to build the **RAG database**.
 
 ## 📂 Dataset-preparation
