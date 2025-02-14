@@ -1,6 +1,8 @@
 # HealthQA_base_MLLM
 > This project is a senior course project of Ocean University of China and Heriot-Watt University. It aims to optimize the multimodal large language model in health and support tri-modal input of text, image and voice. In this experiment, we chose GLM-4V-9B, but it can be easily replaced with other models with better performance.
 
+> According to the course requirements, we also fine-tuned unsloth/Meta-Llama-3.1-8B-bnb-4bit([unsloth/Meta-Llama-3.1-8B-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-bnb-4bit)).
+
 ## 🔥 Introduction
 The core goals of this project are:
 - 🌟 **Support multimodal input**: Combine **text, image, and voice** to improve medical Q&A results.
@@ -77,8 +79,10 @@ Specific evaluation code reference:
 
 | Model | Accuracy |
 |----|----|
-| Without RAG | 31.42% |
-| With RAG | 35.45% |
+| GLM-4V-9B Without RAG | 31.42% |
+| GLM-4V-9B With RAG | 35.45% |
+| unsloth/Meta-Llama-3.1-8B-bnb-4bit | 48.53% |
+| unsloth/Meta-Llama-3.1-8B-bnb-4bit finetuned | 50.24% |
 
 Although the increase is not as large as that of the NHS dataset, the nature of the MMLU-Pro task requires higher reasoning ability, so the result still shows that RAG has a certain enhancement effect.
 
