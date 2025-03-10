@@ -3,6 +3,9 @@
 
 > According to the course requirements, we also fine-tuned unsloth/Meta-Llama-3.1-8B-bnb-4bit([unsloth/Meta-Llama-3.1-8B-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-bnb-4bit)).
 
+## Team member
+Yu Zhou, Xinyu Zhu, Yixing Zheng
+
 ## 🔥 Introduction
 The core goals of this project are:
 - 🌟 **Support multimodal input**: Combine **text, image, and voice** to improve medical Q&A results.
