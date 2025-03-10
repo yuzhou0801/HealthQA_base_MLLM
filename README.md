@@ -3,7 +3,7 @@
 
 > According to the course requirements, we also fine-tuned unsloth/Meta-Llama-3.1-8B-bnb-4bit([unsloth/Meta-Llama-3.1-8B-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-bnb-4bit)).
 
-## Team member
+## 👥 Team member
 Yu Zhou, Xinyu Zhu
 
 ## 🔥 Introduction
@@ -48,6 +48,8 @@ The result of voice input as an example:
 
 Examples of using multimodal images:
 ![picture_exampl](picture/picture_example.jpeg)
+
+You can refer to our trained model here: 🔗 **Model Link:** [trained_health_model_llama3.1_8B_bnb_4bits](https://huggingface.co/esrgesbrt/trained_health_model_llama3.1_8B_bnb_4bits)
 
 ## ✅ Evaluation
 ### 🎯 Accuracy
