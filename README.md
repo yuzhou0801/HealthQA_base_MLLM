@@ -3,8 +3,10 @@
 
 > According to the course requirements, we also fine-tuned unsloth/Meta-Llama-3.1-8B-bnb-4bit([unsloth/Meta-Llama-3.1-8B-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-bnb-4bit)).
 
+<!-- 
 ## 👥 Team member
 Yu Zhou, Xinyu Zhu
+-->
 
 ## 🔥 Introduction
 The core goals of this project are:
