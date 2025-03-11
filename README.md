@@ -41,7 +41,7 @@ In order to achieve the tri-modal task goal, we investigated some multi-modal la
 ### 🔊 Speech Recognition Model
 We chose whisper to complete our speech recognition module.([whisper](https://github.com/openai/whisper))
 
-### Text-to-speech module
+### 🎙️ Text-to-speech module
 We chose gTTS to complete our text-to-speech module.([gTTS](https://github.com/pndurette/gTTS))
 
 ## 📊 Experimental
