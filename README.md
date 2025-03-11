@@ -41,6 +41,9 @@ In order to achieve the tri-modal task goal, we investigated some multi-modal la
 ### 🔊 Speech Recognition Model
 We chose whisper to complete our speech recognition module.([whisper](https://github.com/openai/whisper))
 
+### Text-to-speech module
+We chose gTTS to complete our text-to-speech module.([gTTS](https://github.com/pndurette/gTTS))
+
 ## 📊 Experimental
 After starting to run, the interface is as follows:
 ![interface](picture/web.png)
@@ -52,6 +55,8 @@ Examples of using multimodal images:
 ![picture_exampl](picture/picture_example.jpeg)
 
 You can refer to our trained model here: 🔗 **Model Link:** [trained_health_model_llama3.1_8B_bnb_4bits](https://huggingface.co/esrgesbrt/trained_health_model_llama3.1_8B_bnb_4bits)
+
+The [final.py](directory/final.py) file contains the complete code for fine-tuning using MedQA, using nhs as RAG, and implementing the UI.
 
 ## ✅ Evaluation
 ### 🎯 Accuracy
