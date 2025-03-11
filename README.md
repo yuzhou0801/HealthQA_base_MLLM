@@ -89,7 +89,7 @@ Specific evaluation code reference:
 | GLM-4V-9B Without RAG | 31.42% |
 | GLM-4V-9B With RAG | 35.45% |
 | unsloth/Meta-Llama-3.1-8B-bnb-4bit | 41.56% |
-| unsloth/Meta-Llama-3.1-8B-bnb-4bit finetuned | 45.23% |
+| unsloth/Meta-Llama-3.1-8B-bnb-4bit finetuned | 45.48% |
 
 Although the increase is not as large as that of the NHS dataset, the nature of the MMLU-Pro task requires higher reasoning ability, so the result still shows that RAG has a certain enhancement effect.
 
